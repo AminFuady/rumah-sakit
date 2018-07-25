@@ -46,7 +46,7 @@ class Kamar extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                           'kamar' => array(self::BELONG_TO,'kamar','kd_kamar')
+                           'kamar' => array(self::BELONGS_TO,'kamar','kd_kamar')
 		);
 	}
 

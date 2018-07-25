@@ -47,13 +47,8 @@ $('.search-form form').submit(function(){
                     ),
 		'tanggal_masuk',
 		'keluhan',
-                array (
-                        'header' => 'alamat',
-                        'value' => $model->pasien->alamat,
-                ),
-
+                'alamat',
                 'kd_pasien',
-
                 /*  'tarif_kamar', 
 		'tarif_layanan', */
 		'kd_dokter',

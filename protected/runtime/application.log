@@ -1078,3 +1078,225 @@ Stack trace:
 REQUEST_URI=/rumah-sakit/index.php?r=dokter/admin
 HTTP_REFERER=http://localhost/rumah-sakit/index.php?r=dokter
 ---
+2018/07/24 11:37:54 [error] [exception.CException] exception 'CException' with message 'Property "MedicalRecord.pasien" is not defined.' in C:\xampp\htdocs\yii-2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\db\ar\CActiveRecord.php(145): CComponent->__get('pasien')
+#1 C:\xampp\htdocs\rumah-sakit\protected\views\medicalRecord\admin.php(52): CActiveRecord->__get('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-2\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-2\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#6 C:\xampp\htdocs\rumah-sakit\protected\controllers\MedicalRecordController.php(143): CController->render('admin', Array)
+#7 C:\xampp\htdocs\yii-2\framework\web\actions\CInlineAction.php(49): MedicalRecordController->actionAdmin()
+#8 C:\xampp\htdocs\yii-2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-2\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-2\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii-2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii-2\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-2\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii-2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('admin')
+#17 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('medicalRecord/a...')
+#18 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=medicalRecord/admin
+HTTP_REFERER=http://localhost/rumah-sakit/index.php?r=medicalRecord
+---
+2018/07/25 09:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:50:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+---
+2018/07/25 09:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien
+---
+2018/07/25 09:52:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:53:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:54:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 09:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/dokter".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/dokter')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/dokter
+HTTP_REFERER=http://localhost/rumah-sakit/index.php?r=pasien
+---
+2018/07/25 10:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien/index".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien/ind...')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien/index
+HTTP_REFERER=http://localhost/rumah-sakit/index.php?r=site/index
+---
+2018/07/25 10:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/pasien/index".' in C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('view/pasien/ind...')
+#1 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=view/pasien/index
+HTTP_REFERER=http://localhost/rumah-sakit/index.php?r=site/index
+---
+2018/07/25 10:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien&view=pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 10:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien&view=pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 10:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=site/pasien&view=pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 10:41:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('pasien/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=pasien/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
+2018/07/25 10:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pasien".' in C:\xampp\htdocs\yii-2\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-2\framework\web\CController.php(270): CController->missingAction('pasien')
+#1 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(282): CController->run('pasien')
+#2 C:\xampp\htdocs\yii-2\framework\web\CWebApplication.php(141): CWebApplication->runController('pasien/pasien')
+#3 C:\xampp\htdocs\yii-2\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rumah-sakit\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rumah-sakit/index.php?r=pasien/pasien
+HTTP_REFERER=http://localhost/rumah-sakit/
+---
